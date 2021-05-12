@@ -1,1 +1,1 @@
-web: gunicorn uvicorn.workers.UvicornWorker management_system.app:app
+web: uvicorn app.main:app --host=0.0.0.0 --port=${PORT}
