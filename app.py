@@ -1,1 +1,1 @@
-from management_system.app import app 
+from .management_system.app import app 
