@@ -1,3 +1,1 @@
-web: gunicorn management_system.app:app
-
-# web: uvicorn management_system.app:app -workers 3
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker management_system.app:app
