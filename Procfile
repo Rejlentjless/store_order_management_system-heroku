@@ -1,1 +1,1 @@
-web: uvicornm management_system.app:app -workers 3
+web: uvicorn management_system.app:app -workers 3
